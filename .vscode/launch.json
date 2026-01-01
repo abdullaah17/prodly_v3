@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Prodly Application",
+            "request": "launch",
+            "mainClass": "com.prodly.ProdlyApplication",
+            "projectName": "prodly-gui",
+            "preLaunchTask": "maven-compile",
+            "vmArgs": "-Djava.library.path=../cpp_core/build/Debug",
+            "console": "internalConsole",
+            "internalConsoleOptions": "neverOpen",
+            "cwd": "${workspaceFolder}/java_gui"
+        },
+        {
+            "type": "java",
+            "name": "Debug Prodly Application",
+            "request": "launch",
+            "mainClass": "com.prodly.ProdlyApplication",
+            "projectName": "prodly-gui",
+            "preLaunchTask": "maven-compile",
+            "vmArgs": "-Djava.library.path=../cpp_core/build/Debug",
+            "console": "internalConsole",
+            "internalConsoleOptions": "neverOpen",
+            "cwd": "${workspaceFolder}/java_gui"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.project.sourcePaths": [
+        "java_gui/src/main/java"
+    ],
+    "java.project.outputPath": "java_gui/target/classes",
+    "java.project.referencedLibraries": [
+        "java_gui/target/classes/**/*.jar"
+    ],
+    "files.exclude": {
+        "**/target": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
+}

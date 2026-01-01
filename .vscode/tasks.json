@@ -1,0 +1,81 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "maven-compile",
+            "type": "shell",
+            "command": "mvn",
+            "args": [
+                "clean",
+                "compile"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/java_gui"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": ["$tsc"]
+        },
+        {
+            "label": "Run JavaFX Application",
+            "type": "shell",
+            "command": "mvn",
+            "args": [
+                "javafx:run"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/java_gui"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "maven-javafx-run",
+            "type": "shell",
+            "command": "mvn",
+            "args": [
+                "javafx:run"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/java_gui"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean and Run",
+            "type": "shell",
+            "command": "mvn",
+            "args": [
+                "clean",
+                "compile",
+                "javafx:run"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/java_gui"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
