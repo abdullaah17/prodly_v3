@@ -28,6 +28,6 @@ std::vector<std::pair<std::string, VendorData*>> VendorHashTable::getAllEntries(
     for (auto& pair : table) {
         result.push_back(std::make_pair(pair.first, pair.second.get()));
     }
-    return result;
+    return result; //
 }
 
